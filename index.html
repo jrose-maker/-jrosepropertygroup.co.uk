@@ -31,6 +31,26 @@ h2{font-size:36px;margin:0 0 15px;color:var(--gold2)}.light h2{color:#8b682e}.le
 .lightbox-close{position:fixed;top:18px;right:22px;background:transparent;border:0;color:#fff;font-size:42px;line-height:1;cursor:pointer}
 @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.gallery{grid-template-columns:1fr}.gallery-item img{aspect-ratio:auto}.lightbox{padding:10px}.lightbox img{max-width:96vw;max-height:82vh}}
+
+.guide-section{background:linear-gradient(135deg,#0b0b0b 0%,#17130b 50%,#090909 100%);border-top:1px solid #2f281a;border-bottom:1px solid #2f281a}
+.guide-box{max-width:980px;margin:0 auto;border:1px solid #4a3a1d;background:rgba(12,12,12,.82);padding:48px 42px;box-shadow:0 14px 45px rgba(0,0,0,.35)}
+.guide-kicker{text-transform:uppercase;letter-spacing:3px;color:var(--gold2);font-size:12px;font-weight:700;margin-bottom:10px}
+.guide-title{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:0 0 8px;color:var(--white)}
+.guide-subtitle{font-size:clamp(19px,3vw,26px);color:var(--gold2);margin:0 0 18px}
+.guide-intro{max-width:760px;color:#ddd;font-size:17px;margin:0 0 28px}
+.guide-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 28px;margin:25px 0 30px;padding:0;list-style:none}
+.guide-list li{color:#ddd;padding-left:22px;position:relative}
+.guide-list li:before{content:"✓";position:absolute;left:0;color:var(--gold2);font-weight:700}
+.guide-price{font-size:20px;color:#fff;margin:5px 0 18px}
+.guide-price strong{color:var(--gold2);font-size:28px}
+.guide-note{font-size:12px;line-height:1.5;color:#999;max-width:780px;margin:18px auto 0}
+.guide-btn{background:var(--gold2);color:#111;border:1px solid var(--gold2);padding:15px 28px;font-size:16px;min-width:240px}
+.guide-btn:hover{background:var(--gold);border-color:var(--gold)}
+@media(max-width:760px){
+  .guide-box{padding:34px 22px}
+  .guide-list{grid-template-columns:1fr}
+  .guide-btn{width:100%;max-width:320px}
+}
 </style>
 </head>
 <body>
@@ -57,6 +77,35 @@ h2{font-size:36px;margin:0 0 15px;color:var(--gold2)}.light h2{color:#8b682e}.le
 <p class="gallery-note">Tap any image to view it full screen.</p>
 </div>
 </section>
+
+<section class="guide-section">
+  <div class="wrap">
+    <div class="guide-box">
+      <div class="guide-kicker">J&amp;S Property Maintenance NE LTD</div>
+      <h2 class="guide-title">HOUSE BUYER'S BUILDER GUIDE</h2>
+      <div class="guide-subtitle">What to Look For Before You Buy</div>
+      <p class="guide-intro">Buying a house? Know what to look for before you buy. A practical, easy-to-follow builder's guide designed to help you spot potential problems during a property viewing and know what questions to ask before making an offer.</p>
+      <ul class="guide-list">
+        <li>Damp &amp; moisture warning signs</li>
+        <li>Roofs &amp; gutters</li>
+        <li>Cracks, walls &amp; pointing</li>
+        <li>Windows &amp; doors</li>
+        <li>Kitchens &amp; bathrooms</li>
+        <li>Loft &amp; roof space</li>
+        <li>Floors &amp; ceilings</li>
+        <li>Drainage</li>
+        <li>Previous repairs</li>
+        <li>Green, amber &amp; red warning system</li>
+        <li>Questions to ask before making an offer</li>
+        <li>Viewing notes &amp; checklists</li>
+      </ul>
+      <p class="guide-price"><strong>£3.99</strong> &nbsp;—&nbsp; one-time purchase</p>
+      <a class="btn guide-btn" href="https://payhip.com/buy?link=GFKeA" target="_blank" rel="noopener">GET THE GUIDE — £3.99</a>
+      <p class="guide-note">Written from a builder's perspective. This guide provides general information and practical viewing guidance. It is not a full building survey, RICS survey, structural survey or specialist inspection.</p>
+    </div>
+  </div>
+</section>
+
 <section class="light" id="investors"><div class="wrap">
 <h2>Invest With J Rose Property Group</h2>
 <p class="lead">Are you looking for property investment opportunities? We are interested in speaking with private investors who want to explore potential refurbishment and property investment projects.</p>
